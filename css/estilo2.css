@@ -85,9 +85,6 @@ form .btn-login {
     padding: 7px;
 }
 
-
-/* APARIÇÃO DO FORM */
-
 form {
     animation-name: fade;
     animation-duration: 0.5s;
@@ -104,16 +101,11 @@ form {
     }
 }
 
-
-/* APARIÇÃO DOS CAMPOS DA ESQUERDA PARA A DIREITA */
-
 form {
     overflow: hidden;
-    /* para que os campos não apareçam fora do form */
 }
 
 form .input-block:nth-child(1) {
-    /* :nth-child(1) - referencia o primeito filho, sem esta propriedade morerá o block inteiro */
     animation-name: move;
     animation-duration: 0.5s;
 }
@@ -123,7 +115,6 @@ form .input-block:nth-child(2) {
     animation-duration: 0.4s;
     animation-delay: 0.1s;
     animation-fill-mode: backwards;
-    /* trabalha no momento em que não está acontecendo a animação - espera do delay*/
 }
 
 form .btn-login {
@@ -144,15 +135,10 @@ form .btn-login {
     }
 }
 
-
-/* QUANDO CLICAR NO BOTÃO SUMIR COM O FORM */
-
 .form-hide {
     animation: down 0.5s;
     animation-fill-mode: forwards;
-    /*diz para o elemeto ficar em sua posição final após a animação*/
     animation-timing-fuction: ease-in;
-    /* sainda devagar e chegadda rápida*/
 }
 
 @keyframes down {
@@ -164,12 +150,8 @@ form .btn-login {
     }
 }
 
-
-/* FORM NO-NO */
-
 form.validate-error {
     animation: nono 200ms linear, fade paused;
-    /* animation-play-state: paused; */
     animation-iteration-count: 2;
 }
 
@@ -186,12 +168,8 @@ form.validate-error {
     }
 }
 
-
-/* SQUARES */
-
 body {
     overflow: hidden;
-    /* para não aparecer a rolagem */
 }
 
 .squares li {
