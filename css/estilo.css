@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #202020;
+}
+
+.display-4 {
+    line-height: 1.7;
+}
+
+.mt-n5 {
+    margin-top: -2rem !important;
+}
+
+.jumbotron {
+    padding: 0.2rem 1rem !important;
+    margin-bottom: 2rem !important;
+    background-color: #202020 !important;
+}
+
+.text-header {
+    color: #fff;
+    font-family: monospace;
+}
+
+.bg-header {
+    background: url("../img/jumbo.jpg");
+    background-size: cover;
+}
+
+.navbar {
+    padding: 0rem 1rem !important;
+    text-transform: uppercase;
+}
+
+.bg-navbar {
+    background-color: #1c1e2050;
+}
+
+.area-animacao {
+    background: linear-gradient(to left, #333538, #1c1e20);
+    width: 100%;
+    height: 100vh;
+}
+
+.area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 2rem;
+    height: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    animation: animate 10s linear infinite;
+    bottom: -150px;
+}
+
+.area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2.5s;
+}
+
+.area li:nth-child(2) {
+    left: 12%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 5s;
+    animation-duration: 10s;
+}
+
+.area li:nth-child(3) {
+    left: 20%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1.5s;
+}
+
+.area li:nth-child(4) {
+    left: 42%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.area li:nth-child(5) {
+    left: 65%;
+    width: 145px;
+    height: 145px;
+    animation-delay: 0s;
+}
+
+.area li:nth-child(6) {
+    left: 5%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
